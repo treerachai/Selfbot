@@ -1,4 +1,5 @@
 var myToken = 'Y  O  U  R  -  T  O  K  E  N  -  H  E  R  E'
+var myPreifx = 'self:'
 
 var Discord = require('discord.js')
 var self = new Discord.Client()
@@ -15,7 +16,7 @@ var list = {
             })
     },
     'eval': message => {
-        var code = message.content.slice('self:eval '.length)
+        var code = message.content.slice(myPrefix.length + 1)
         try {
             message.edit(`\`INPUT:\`\n\`\`\`${code}\`\`\`\n\`OUTPUT:\`\n\`\`\`${eval(code)}\`\`\``)
         } catch(err) {
@@ -26,8 +27,8 @@ var list = {
 
 self.on('message', message => {
     if (message.author.id !== self.user.id) return; // Make sure only you can use the bot
-    if (!message.content.startsWith('self:')) return; // Make sure it is a command
-    var command = list[message.content.split(' ')[0].substring(5)]; // Get the command
+    if (!message.content.startsWith(myPrefix)) return; // Make sure it is a command
+    var command = list[message.content.split(' ')[0].substring(myPrefix.length)]; // Get the command
     if (!command) return; // Check to see if it is a command
     command(message); // Run the command
 });
