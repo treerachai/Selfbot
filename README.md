@@ -1,4 +1,5 @@
 # Self Bot by HyperCoder.
+-----
 
-## Make sure to have NodeJs v6.*.* installed
-### You can check with ```node -v```.
+## Make sure to have NodeJs Version 6+ is installed
+You can check with ```node -v```.
