@@ -24,9 +24,9 @@ const commands = {
         const code = newContent.slice(newContent.search(' ') + 1);
         if (!code.length) return message.reply('there\'s no code!');
         try {
-            message.edit(`\`INPUT:\`\n\`\`\`${code}\`\`\`\n\`OUTPUT:\`\n\`\`\`${eval(code)}\`\`\``);
+            message.edit(`\`INPUT:\`\n\`\`\`\n${code}\n\`\`\`\n\`OUTPUT:\`\n\`\`\`\n${eval(code)}\n\`\`\``);
         } catch(err) {
-            message.edit(`\`INPUT:\`\n\`\`\`${code}\`\`\`\n\`ERROR:\`\n\`\`\`${err}\`\`\``);
+            message.edit(`\`INPUT:\`\n\`\`\`\n${code}\n\`\`\`\n\`ERROR:\`\n\`\`\`\n${err}\n\`\`\``);
         }
     }
 };
