@@ -5,4 +5,4 @@
 You can check with ```node -v```.
 
 ## This self bot uses the Discord.JS Indev Rewrite.
-Install with ```npm install hydrabolt/discord.js#indev-rewrite```
+Install with ```npm install discord.js```.
