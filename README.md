@@ -1,8 +1,8 @@
 # Self Bot by HyperCoder.
 -----
 
-## Make sure to have NodeJs Version 6+ is installed
-You can check with ```node -v```.
+## Edit commands in Commands directory
 
-## This self bot uses the Discord.JS Indev Rewrite.
-Install with ```npm install discord.js```.
+## Start by double clicking the execute file
+
+##Put your token and desired prefix in the config file
