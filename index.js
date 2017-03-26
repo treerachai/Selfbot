@@ -18,7 +18,6 @@ function loadCommands() {
     });
 }
 
-// Receivers
 self.on('ready', () => {
     console.log('Client Connected');
 });
@@ -28,8 +27,8 @@ self.on('reconnecting', () => {
 });
 
 self.on('message', message => {
-    if (message.author.id !== self.user.id) return; // Just to be sure the author is the self bot
-    if (!message.content.startsWith(config.prefix)) return; // Just to make sure a command is being used
+    if (message.author.id !== self.user.id) return;
+    if (!message.content.startsWith(config.prefix)) return;
 
     const content = message.content.slice(config.prefix.length);
 
