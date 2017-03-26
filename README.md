@@ -5,4 +5,4 @@
 
 ## Start by double clicking the execute file
 
-##Put your token and desired prefix in the config file
+## Put your token and desired prefix in the config file
