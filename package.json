@@ -1,0 +1,7 @@
+{
+    "dependencies": {
+        "discord.js": "hydrabolt/discord.js#master",
+        "erlpack": "hammerandchisel/erlpack",
+        "fs-extra-promise": "^0.4.1"
+    }
+}
