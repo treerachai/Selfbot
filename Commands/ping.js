@@ -10,8 +10,8 @@ module.exports = class extends Command {
     }
 
     execute(message) {
-        message.channel.sendMessage(`Self Pinging...`).then(msg => {
-            msg.edit(`Self Pong! | Took ${msg.createdTimestamp - message.createdTimestamp}ms`);
+        message.channel.send(`Self Pinging...`).then(msg => {
+            msg.edit(`Pong! | Client Ping: ${msg.createdTimestamp - message.createdTimestamp}ms | API Latency: ${this.self.ping}ms`);
         });
     }
 };
